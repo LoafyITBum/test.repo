@@ -8,8 +8,6 @@ if (($handle = fopen("14.website_sessions_2014_Jan.csv", "r")) !== FALSE) {
         for ($c=0; $c < $num; $c++) {
             echo "<td>" . htmlspecialchars($data[$c]) . "</td>";
         }
-        echo "</tr>";
-        $row++;
     }
     fclose($handle);
 }
